@@ -13,12 +13,21 @@ const categories: Category[] = [
   { id: 4, name: 'General Knowledge' },
 ];
 
+// Define the properties for the component
+interface CategoryListProps {
+  onSelectCategory: (id: number) => void;
+}
+
 // Type the component as a React Functional Component (React.FC)
-const CategoryList: React.FC = () => {
+const CategoryList: React.FC<CategoryListProps> = ({ onSelectCategory }) => {
   return (
     <div className="category-list">
       {categories.map(category => (
-        <div key={category.id} className="category">
+        <div
+          key={category.id}
+          className="category"
+          onClick={() => onSelectCategory(category.id)}
+        >
           {category.name}
         </div>
       ))}
