@@ -12,6 +12,11 @@ const App: React.FC = () => {
     setSelectedCategory(id);
   };
 
+  // Handler for when the quiz is completed
+  const handleQuizComplete = () => {
+    setSelectedCategory(null); // This will cause the view to go back to the category list
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -21,7 +26,10 @@ const App: React.FC = () => {
         {selectedCategory === null ? (
           <CategoryList onSelectCategory={handleSelectCategory} />
         ) : (
-          <Quiz categoryId={selectedCategory} />
+          <Quiz
+            categoryId={selectedCategory}
+            onQuizComplete={handleQuizComplete} // Pass the handler down to the Quiz component
+          />
         )}
       </main>
     </div>

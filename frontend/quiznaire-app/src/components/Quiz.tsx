@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 // Define the structure of a question
 interface Question {
   id: number;
@@ -31,32 +32,40 @@ const questions: Question[] = [
 
 interface QuizProps {
   categoryId: number;
+  onQuizComplete: () => void; // New prop to notify the parent
 }
 
-const Quiz: React.FC<QuizProps> = ({ categoryId }) => {
+const Quiz: React.FC<QuizProps> = ({ categoryId, onQuizComplete }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showAnswer, setShowAnswer] = useState(false);
   const [timeLeft, setTimeLeft] = useState(10);
 
+  // This effect now handles the end of the quiz
   useEffect(() => {
-    // If an answer is shown, don't run the timer
+    if (currentQuestionIndex === questions.length) {
+      onQuizComplete(); // Notify the parent that the quiz is over
+      return;
+    }
+
     if (showAnswer) return;
 
-    // When the timer hits 0, show the answer
     if (timeLeft === 0) {
       setShowAnswer(true);
       return;
     }
 
-    // Set up the interval to run every second.
     const timerId = setInterval(() => {
       setTimeLeft(timeLeft - 1);
     }, 1000);
 
-    // Clean up the interval when the component unmounts or re-renders
     return () => clearInterval(timerId);
-  }, [timeLeft, showAnswer]); // dependency array that tells react to re-run the effect if one of these values change.
+  }, [timeLeft, showAnswer, currentQuestionIndex, onQuizComplete]);
+
+  // Check if the quiz is over before trying to render a question
+  if (currentQuestionIndex === questions.length) {
+    return <div>Quiz Completed!</div>; // Or null, or a summary component
+  }
 
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -68,7 +77,7 @@ const Quiz: React.FC<QuizProps> = ({ categoryId }) => {
   const handleNextClick = () => {
     setShowAnswer(false);
     setSelectedAnswer(null);
-    setTimeLeft(10); // Reset the timer
+    setTimeLeft(10);
     setCurrentQuestionIndex(currentQuestionIndex + 1);
   };
 
