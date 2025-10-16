@@ -32,19 +32,19 @@ const questions: Question[] = [
 
 interface QuizProps {
   categoryId: number;
-  onQuizComplete: () => void; // New prop to notify the parent
+  onQuizComplete: () => void;
+  onScoreUpdate: () => void;
 }
 
-const Quiz: React.FC<QuizProps> = ({ categoryId, onQuizComplete }) => {
+const Quiz: React.FC<QuizProps> = ({ categoryId, onQuizComplete, onScoreUpdate }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showAnswer, setShowAnswer] = useState(false);
   const [timeLeft, setTimeLeft] = useState(10);
 
-  // This effect now handles the end of the quiz
   useEffect(() => {
     if (currentQuestionIndex === questions.length) {
-      onQuizComplete(); // Notify the parent that the quiz is over
+      onQuizComplete();
       return;
     }
 
@@ -62,14 +62,16 @@ const Quiz: React.FC<QuizProps> = ({ categoryId, onQuizComplete }) => {
     return () => clearInterval(timerId);
   }, [timeLeft, showAnswer, currentQuestionIndex, onQuizComplete]);
 
-  // Check if the quiz is over before trying to render a question
   if (currentQuestionIndex === questions.length) {
-    return <div>Quiz Completed!</div>; // Or null, or a summary component
+    return <div>Quiz Completed!</div>;
   }
 
   const currentQuestion = questions[currentQuestionIndex];
 
   const handleAnswerClick = (option: string) => {
+    if (option === currentQuestion.correctAnswer) {
+      onScoreUpdate();
+    }
     setSelectedAnswer(option);
     setShowAnswer(true);
   };
