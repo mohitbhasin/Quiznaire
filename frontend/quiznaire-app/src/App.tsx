@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Header from './components/Header.tsx';
 import CategoryList from './components/CategoryList.tsx';
 import Quiz from './components/Quiz.tsx';
 
@@ -22,10 +23,9 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>{selectedCategory ? `Score: ${score}` : 'Choose a Category'}</h1>
-      </header>
+      <Header />
       <main>
+        <h1>{selectedCategory ? `Score: ${score}` : 'Choose a Category'}</h1>
         {selectedCategory === null ? (
           <CategoryList onSelectCategory={handleSelectCategory} />
         ) : (
