@@ -1,17 +1,6 @@
 import React from 'react';
 
-// Define a type for a single category
-interface Category {
-  id: number;
-  name: string;
-}
-
-const categories: Category[] = [
-  { id: 1, name: 'History' },
-  { id: 2, name: 'Science' },
-  { id: 3, name: 'Movies' },
-  { id: 4, name: 'General Knowledge' },
-];
+import { categories } from '../data/categories.ts';
 
 // Define the properties for the component
 interface CategoryListProps {

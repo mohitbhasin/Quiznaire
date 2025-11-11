@@ -1,0 +1,540 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "Which chemical element was originally known as Alabamine?",
+        "correct_answer": "Astatine",
+        "incorrect_answers": [
+            "Selenium",
+            "Antimony",
+            "Molybdenum"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "Myopia is the scientific term for which condition?",
+        "correct_answer": "Shortsightedness",
+        "incorrect_answers": [
+            "Farsightedness",
+            "Double Vision",
+            "Clouded Vision"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "What is the largest living organism currently known to man?",
+        "correct_answer": "Honey Fungus",
+        "incorrect_answers": [
+            "Blue Whale",
+            "Redwood Tree",
+            "The Coral Reef"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "Which one of these scientists conducted the Gold Foil Experiment which concluded that atoms are mostly made of empty space?",
+        "correct_answer": "Ernest Rutherford",
+        "incorrect_answers": [
+            "Joseph John Thomson",
+            "Archimedes",
+            "Niels Henrik David Bohr"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "Which of these choices is not one of the phases of mitosis?",
+        "correct_answer": "Diplophase",
+        "incorrect_answers": [
+            "Metaphase",
+            "Anaphase",
+            "Telophase"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "What genetic disease is caused by having an extra Y chromosome (XYY)?",
+        "correct_answer": "Jacob&#039;s Syndrome",
+        "incorrect_answers": [
+            "Klinefelter&#039;s Syndrome",
+            "Turner&#039;s Syndrome",
+            "Down Syndrome"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "The human right lung has how many lobes?",
+        "correct_answer": "3",
+        "incorrect_answers": [
+            "4",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "After which Danish city is the 72th element on the periodic table named?",
+        "correct_answer": "Copenhagen",
+        "incorrect_answers": [
+            "Odense",
+            "Herning",
+            "Skagen"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "Which is not a type of neuron?",
+        "correct_answer": "Perceptual Neuron",
+        "incorrect_answers": [
+            "Sensory Neuron",
+            "Motor Neuron",
+            "Interneuron"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "Which is the longest bone in the human body? ",
+        "correct_answer": "Femur",
+        "incorrect_answers": [
+            "Scapula",
+            "Fibula",
+            "Ulna"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "What is the scientific term for &#039;taste&#039;?",
+        "correct_answer": "Gustatory Perception",
+        "incorrect_answers": [
+            "Olfaction",
+            "Somatosensation",
+            "Auditory Perception"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "Hippopotomonstrosesquippedaliophobia is the irrational fear of long words.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "Psychology is the science of behavior and mind.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "What is the 'powerhouse' of the Eukaryotic animal cell?",
+        "correct_answer": "Mitochondria",
+        "incorrect_answers": [
+            "Nucleus",
+            "Chloroplast",
+            "Endoplasmic Reticulum"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "A comet&#039;s gaseous envelope (which creates the tail) is called what?",
+        "correct_answer": "The coma",
+        "incorrect_answers": [
+            "The wake",
+            "The backwash",
+            "The ablative"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "How many types of quarks are there in the standard model of physics?",
+        "correct_answer": "6",
+        "incorrect_answers": [
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "Which of the following blood vessels carries deoxygenated blood?",
+        "correct_answer": "Pulmonary Artery",
+        "incorrect_answers": [
+            "Pulmonary Vein",
+            "Aorta",
+            "Coronary Artery"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "Which of the following are cells of the adaptive immune system?",
+        "correct_answer": "Cytotoxic T cells",
+        "incorrect_answers": [
+            "Dendritic cells",
+            "Natural killer cells",
+            "White blood cells"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "Autosomal-dominant Compelling Helio-Ophthalmic Outburst syndrome is the need to do what when seeing the Sun?",
+        "correct_answer": "Sneeze",
+        "incorrect_answers": [
+            "Cough",
+            "Yawn",
+            "Hiccup"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "The Sun is considered a star.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "What does DNA stand for?",
+        "correct_answer": "Deoxyribonucleic Acid",
+        "incorrect_answers": [
+            "Deoxyribogenetic Acid",
+            "Deoxyribogenetic Atoms",
+            "Detoxic Acid"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "In Chemistry, how many isomers does Butanol (C4H9OH) have?",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "How many degrees Fahrenheit is 100 degrees Celsius? ",
+        "correct_answer": "212",
+        "incorrect_answers": [
+            "326",
+            "100",
+            "451"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "Which of these bones is hardest to break?",
+        "correct_answer": "Femur",
+        "incorrect_answers": [
+            "Cranium",
+            "Humerus",
+            "Tibia"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "In the Scoville scale, what is the hottest chemical?",
+        "correct_answer": "Resiniferatoxin",
+        "incorrect_answers": [
+            "Capsaicin",
+            "Dihydrocapsaicin",
+            "Tinyatoxin"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "What common name is given to the medial condition, tibial stress syndrome (MTSS)?",
+        "correct_answer": "Shin Splints",
+        "incorrect_answers": [
+            "Tennis Elbow",
+            "Carpal Tunnel",
+            "Housemaid&#039;s Knee"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "What is the standard SI unit for mass?",
+        "correct_answer": "Kilogram",
+        "incorrect_answers": [
+            "Tonne",
+            "Pound",
+            "Gram"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "The medical term for the belly button is which of the following?",
+        "correct_answer": "Umbilicus",
+        "incorrect_answers": [
+            "Nevus",
+            "Nares",
+            "Paxillus"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "Which of these is NOT a part of the structure of a typical neuron?",
+        "correct_answer": "Islets of Langerhans",
+        "incorrect_answers": [
+            "Node of Ranvier",
+            "Schwann cell",
+            "Myelin sheath"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "What is the scientific name for the extinct hominin known as 'Lucy'?",
+        "correct_answer": "Australopithecus Afarensis",
+        "incorrect_answers": [
+            "Australopithecus Africanus",
+            "Australopithecus Architeuthis",
+            "Australopithecus Antaris"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "Type 1 diabetes is a result of the liver working improperly.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "What part of the brain takes its name from the Greek for seahorse?",
+        "correct_answer": "Hippocampus",
+        "incorrect_answers": [
+            "Cerebellum",
+            "Thalamus",
+            "Amygdala"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "What is the largest planet in the Solar System?",
+        "correct_answer": "Jupiter",
+        "incorrect_answers": [
+            "Saturn",
+            "Earth",
+            "Mars"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "Centripetal force is an apparent force that acts outward on a body moving around a center, arising from the body&#039;s inertia.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "The most frequent subconscious activity repeated by the human body is blinking.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "In aeronautics, flaps and slats are used to control what on an aircraft?",
+        "correct_answer": "Lift",
+        "incorrect_answers": [
+            "Thrust",
+            "Drag",
+            "Weight "
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "Which element has the highest melting point?",
+        "correct_answer": "Carbon",
+        "incorrect_answers": [
+            "Tungsten",
+            "Platinum",
+            "Osmium"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "In human biology, a circadium rhythm relates to a period of roughly how many hours?",
+        "correct_answer": "24",
+        "incorrect_answers": [
+            "8",
+            "16",
+            "32"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "What is the molecular formula of Glucose?",
+        "correct_answer": "C6H12O6",
+        "incorrect_answers": [
+            "C2H4O2",
+            "K+",
+            "CH4"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "Which element has the chemical symbol &#039;Fe&#039;?",
+        "correct_answer": "Iron",
+        "incorrect_answers": [
+            "Gold",
+            "Silver",
+            "Tin"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "A positron is an antiparticle of a what?",
+        "correct_answer": "Electron",
+        "incorrect_answers": [
+            "Neutron",
+            "Proton",
+            "Photon"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "Like with the Neanderthals, Homo sapiens sapiens also interbred with the Denisovans.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Science & Nature",
+        "question": "What organelle aids in synthesis of DNA in cells?",
+        "correct_answer": "Ribosomes",
+        "incorrect_answers": [
+            "Nuclei",
+            "Lysosomes",
+            "Mitochondria"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "What is the unit of electrical inductance?",
+        "correct_answer": "Henry",
+        "incorrect_answers": [
+            "Weber",
+            "Coulomb",
+            "Mho"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Science & Nature",
+        "question": "Gannymede is the largest moon of which planet?",
+        "correct_answer": "Jupiter",
+        "incorrect_answers": [
+            "Uranus",
+            "Neptune",
+            "Mars"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Science & Nature",
+        "question": "How many protons are in an oxygen atom?",
+        "correct_answer": "Eight",
+        "incorrect_answers": [
+            "Four",
+            "Two",
+            "Six"
+        ]
+    }
+]

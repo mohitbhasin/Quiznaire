@@ -1,34 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-// Define the structure of a question
-interface Question {
-  id: number;
-  text: string;
-  options: string[];
-  correctAnswer: string;
-}
-
-// Mock data for the quiz questions
-const questions: Question[] = [
-  {
-    id: 1,
-    text: 'What is the capital of France?',
-    options: ['Berlin', 'Madrid', 'Paris', 'Lisbon'],
-    correctAnswer: 'Paris',
-  },
-  {
-    id: 2,
-    text: 'Which planet is known as the Red Planet?',
-    options: ['Earth', 'Mars', 'Jupiter', 'Venus'],
-    correctAnswer: 'Mars',
-  },
-  {
-    id: 3,
-    text: 'Who wrote the play \'Romeo and Juliet\'?',
-    options: ['Charles Dickens', 'William Shakespeare', 'Jane Austen', 'Mark Twain'],
-    correctAnswer: 'William Shakespeare',
-  },
-];
+import { categories, Question } from '../data/categories.ts';
 
 interface QuizProps {
   categoryId: number;
@@ -37,13 +9,61 @@ interface QuizProps {
 }
 
 const Quiz: React.FC<QuizProps> = ({ categoryId, onQuizComplete, onScoreUpdate }) => {
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [loading, setLoading] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showAnswer, setShowAnswer] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(10);
+  const [timeLeft, setTimeLeft] = useState(30);
+  const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
+
+  const shuffleArray = <T,>(array: T[]): T[] => [...array].sort(() => Math.random() - 0.5);
 
   useEffect(() => {
-    if (currentQuestionIndex === questions.length) {
+    const fetchQuestions = async () => {
+      setLoading(true);
+      setCurrentQuestionIndex(0);
+      setSelectedAnswer(null);
+      setShowAnswer(false);
+      setTimeLeft(30);
+
+      try {
+        const currCategory = categories.find(c => c.id === categoryId);
+        if(currCategory) {
+          const questionModule = await import(`../data/${currCategory.file}`);
+          const allQuestions: Question[] = questionModule.default;
+          setQuestions(shuffleArray(allQuestions).slice(0, 10));
+        } else {
+          setQuestions([]);
+        }
+      } catch (error) {
+        console.error('Error fetching questions:', error);
+        setQuestions([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchQuestions();
+  }, [categoryId]);
+
+  useEffect(() => {
+    if (questions.length > 0 && currentQuestionIndex < questions.length) {
+      const currentQuestion = questions[currentQuestionIndex];
+      const options = shuffleArray([
+        ...currentQuestion.incorrect_answers,
+        currentQuestion.correct_answer,
+      ]);
+      setShuffledOptions(options);
+    }
+  }, [currentQuestionIndex, questions]);
+
+  useEffect(() => {
+    if (loading) {
+      return;
+    }
+
+    if (questions.length === 0 || currentQuestionIndex === questions.length) {
       onQuizComplete();
       return;
     }
@@ -60,8 +80,15 @@ const Quiz: React.FC<QuizProps> = ({ categoryId, onQuizComplete, onScoreUpdate }
     }, 1000);
 
     return () => clearInterval(timerId);
-  }, [timeLeft, showAnswer, currentQuestionIndex, onQuizComplete]);
+  }, [timeLeft, showAnswer, currentQuestionIndex, onQuizComplete, questions, loading]);
 
+  if(loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (questions.length === 0) {
+    return <div>No questions available for this category.</div>;
+  }
   if (currentQuestionIndex === questions.length) {
     return <div>Quiz Completed!</div>;
   }
@@ -69,7 +96,7 @@ const Quiz: React.FC<QuizProps> = ({ categoryId, onQuizComplete, onScoreUpdate }
   const currentQuestion = questions[currentQuestionIndex];
 
   const handleAnswerClick = (option: string) => {
-    if (option === currentQuestion.correctAnswer) {
+    if (option === currentQuestion.correct_answer) {
       onScoreUpdate();
     }
     setSelectedAnswer(option);
@@ -79,7 +106,7 @@ const Quiz: React.FC<QuizProps> = ({ categoryId, onQuizComplete, onScoreUpdate }
   const handleNextClick = () => {
     setShowAnswer(false);
     setSelectedAnswer(null);
-    setTimeLeft(10);
+    setTimeLeft(30);
     setCurrentQuestionIndex(currentQuestionIndex + 1);
   };
 
@@ -87,7 +114,7 @@ const Quiz: React.FC<QuizProps> = ({ categoryId, onQuizComplete, onScoreUpdate }
     if (!showAnswer) {
       return 'option-button';
     }
-    if (option === currentQuestion.correctAnswer) {
+    if (option === currentQuestion.correct_answer) {
       return 'option-button correct';
     }
     if (option === selectedAnswer) {
@@ -99,13 +126,13 @@ const Quiz: React.FC<QuizProps> = ({ categoryId, onQuizComplete, onScoreUpdate }
   return (
     <div className="quiz-container">
       <div className="quiz-header">
-        <h2>{currentQuestion.text}</h2>
+        <h2>{currentQuestion.question}</h2>
         <div className="timer">Time Left: {timeLeft}s</div>
       </div>
       <div className="options-container">
-        {currentQuestion.options.map((option, index) => (
+        {shuffledOptions.map((option, index) => (
           <button
-            key={index}
+            key={option}
             className={getButtonClassName(option)}
             onClick={() => handleAnswerClick(option)}
             disabled={showAnswer}

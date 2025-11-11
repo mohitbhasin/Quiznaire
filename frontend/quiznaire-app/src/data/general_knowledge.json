@@ -1,0 +1,396 @@
+[
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "Which of the following card games revolves around numbers and basic math?",
+        "correct_answer": "Uno",
+        "incorrect_answers": [
+            "Go Fish",
+            "Twister",
+            "Munchkin"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "What direction does the Statue of Liberty face?",
+        "correct_answer": "Southeast",
+        "incorrect_answers": [
+            "Southwest",
+            "Northwest",
+            "Northeast"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "In what year was McDonald's founded?",
+        "correct_answer": "1955",
+        "incorrect_answers": [
+            "1964",
+            "1951",
+            "1947"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "Frank Lloyd Wright was the architect behind what famous building?",
+        "correct_answer": "The Guggenheim",
+        "incorrect_answers": [
+            "Villa Savoye",
+            "Sydney Opera House",
+            "The Space Needle"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "General Knowledge",
+        "question": "If you planted the seeds of Quercus robur, what would grow?",
+        "correct_answer": "Trees",
+        "incorrect_answers": [
+            "Grains",
+            "Vegetables",
+            "Flowers"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "In which cardinal direction does the Sun rise from?",
+        "correct_answer": "East",
+        "incorrect_answers": [
+            "West",
+            "North",
+            "South"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "What does a funambulist walk on?",
+        "correct_answer": "A Tight Rope",
+        "incorrect_answers": [
+            "Broken Glass",
+            "Balls",
+            "The Moon"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "General Knowledge",
+        "question": "Sciophobia is the fear of what?",
+        "correct_answer": "Shadows",
+        "incorrect_answers": [
+            "Eating",
+            "Bright lights",
+            "Transportation"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "'Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo.' is a grammatically correct sentence.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
+        "correct_answer": "Cabbage Patch Kids",
+        "incorrect_answers": [
+            "Transformers",
+            "Care Bears",
+            "Rubik's Cube"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "What word represents the letter 'T' in the NATO phonetic alphabet?",
+        "correct_answer": "Tango",
+        "incorrect_answers": [
+            "Target",
+            "Taxi",
+            "Turkey"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "When was Hubba Bubba first introduced?",
+        "correct_answer": "1979",
+        "incorrect_answers": [
+            "1984",
+            "1972",
+            "1980"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "A doctor with a PhD is a doctor of what?",
+        "correct_answer": "Philosophy",
+        "incorrect_answers": [
+            "Psychology",
+            "Phrenology",
+            "Physical Therapy"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "When one is 'envious', they are said to be what color?",
+        "correct_answer": "Green",
+        "incorrect_answers": [
+            "Red",
+            "Blue",
+            "Yellow"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "A pasodoble is a type of Italian pasta sauce.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "What is the official language of Brazil?",
+        "correct_answer": "Portuguese",
+        "incorrect_answers": [
+            "Brazilian",
+            "Spanish",
+            "English"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "General Knowledge",
+        "question": "In flight systems, what does the initialism 'TCAS' stand for?",
+        "correct_answer": "Traffic Collision Avoidance System",
+        "incorrect_answers": [
+            "Traffic Communication Alert System",
+            "Traffic Configuration Alignment System",
+            "Traffic Call-sign Abbreviation System"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "The mitochondria is the powerhouse of the cell.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "King Gizzard & The Lizard Wizard's album 'Nonagon Infinity' can be looped seamlessly.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "Which of these is NOT considered to be a color that makes up the rainbow?",
+        "correct_answer": "Pink",
+        "incorrect_answers": [
+            "Blue",
+            "Violet",
+            "Orange"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "When did the website 'Facebook' launch?",
+        "correct_answer": "2004",
+        "incorrect_answers": [
+            "2005",
+            "2003",
+            "2006"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "Which of these fast-food chains is NOT mainly known to sell pizza?",
+        "correct_answer": "Wendy's",
+        "incorrect_answers": [
+            "Domino's",
+            "Little Caesars",
+            "Papa John's"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "In 2010, Twitter and the United States Library of Congress partnered together to archive every tweet by American citizens.",
+        "correct_answer": "True",
+        "incorrect_answers": [
+            "False"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
+        "correct_answer": "Subscriber",
+        "incorrect_answers": [
+            "Single",
+            "Secure",
+            "Solid"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "Popcorn was invented in 1871 by Frederick W. Rueckheim in the USA where he sold the snack on the streets of Chicago.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "'Gum arabic' is a natural gum consisting of the hardened sap of which tree species?",
+        "correct_answer": "Acacia",
+        "incorrect_answers": [
+            "Palm",
+            "Ficus",
+            "Eucalyptus"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "The Fields Medal, one of the most sought after awards in mathematics, is awarded every how many years?",
+        "correct_answer": "4",
+        "incorrect_answers": [
+            "3",
+            "5",
+            "6"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "An eggplant is a vegetable.",
+        "correct_answer": "False",
+        "incorrect_answers": [
+            "True"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "General Knowledge",
+        "question": "Named after the mallow flower, mauve is a shade of what?",
+        "correct_answer": "Purple",
+        "incorrect_answers": [
+            "Red",
+            "Brown",
+            "Pink"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "In a 1994 CBS interview, Microsoft co-founder Bill Gates performed what unusual trick on camera?",
+        "correct_answer": "Jumping over an office chair",
+        "incorrect_answers": [
+            "Jumping backwards over a desk",
+            "Standing on his head",
+            "Typing on a keyboard during a handstand"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "General Knowledge",
+        "question": "What year was the first Apple iPod introduced?",
+        "correct_answer": "2001",
+        "incorrect_answers": [
+            "2000",
+            "1999",
+            "1998"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "General Knowledge",
+        "question": "When was 'YouTube' founded?",
+        "correct_answer": "February 14, 2005",
+        "incorrect_answers": [
+            "May 22, 2004",
+            "September 12, 2005",
+            "July 19, 2009"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "General Knowledge",
+        "question": "What is the closest planet to our solar system's sun?",
+        "correct_answer": "Mercury",
+        "incorrect_answers": [
+            "Mars",
+            "Jupiter",
+            "Earth"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "General Knowledge",
+        "question": "The words 'bungalow' and 'shampoo' originate from the languages of which country?",
+        "correct_answer": "India",
+        "incorrect_answers": [
+            "Papua New Guinea",
+            "Ethiopia",
+            "China"
+        ]
+    }
+]
