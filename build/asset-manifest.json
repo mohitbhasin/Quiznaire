@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Quiznaire/static/css/main.860f7322.css",
+    "main.js": "/Quiznaire/static/js/main.a8ac6163.js",
+    "static/js/900.fe03fe7d.chunk.js": "/Quiznaire/static/js/900.fe03fe7d.chunk.js",
+    "static/js/1.f452fade.chunk.js": "/Quiznaire/static/js/1.f452fade.chunk.js",
+    "static/js/504.b4ddab04.chunk.js": "/Quiznaire/static/js/504.b4ddab04.chunk.js",
+    "static/media/logo.png": "/Quiznaire/static/media/logo.ff2a2c3232f3191b6885.png",
+    "index.html": "/Quiznaire/index.html",
+    "main.860f7322.css.map": "/Quiznaire/static/css/main.860f7322.css.map",
+    "main.a8ac6163.js.map": "/Quiznaire/static/js/main.a8ac6163.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.860f7322.css",
+    "static/js/main.a8ac6163.js"
+  ]
+}
