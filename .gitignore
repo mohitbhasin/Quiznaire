@@ -1,0 +1,22 @@
+# IntelliJ
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+static/
+.env
+
+# Existing
+# Default ignored files
+/shelf/
+/workspace.xml
+node_modules
